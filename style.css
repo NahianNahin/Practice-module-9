@@ -1,5 +1,6 @@
 /* fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 
 /* common css  */
@@ -9,7 +10,8 @@ body{
 }
 .container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: #E5E5E5;;
 }
 a{
@@ -86,4 +88,68 @@ hr{
     color: #562EFF;
     font-size: 16px;
     font-weight: 400;
+}
+/* botton section css  */
+.botton-section{
+    width: 870px;
+    background-color: #fff;
+    padding: 23px 30px;
+    border-radius: 5px;
+    margin-bottom: 28px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 25px;
+}
+.course{
+    padding: 14px 16px 16px 12px;
+    /* border: 1px solid black; */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+}
+.courses .course img{
+    width: 224px;
+    height: 104px;
+}
+.p4{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin: 16px 0 6px 0;
+}
+.p5{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(237, 107, 79, 1);
+    font-size: 14.69px;
+    font-weight: 400;
+    margin: 0;
+    
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-solid{
+    font-size: 14px;
+}
+.fa-star.filled{
+    color:#FFC014 ;
+}
+.fa-star.unfilled{
+    color:rgba(174, 174, 174, .6) ;
+}
+.rating span{
+    color: rgba(162, 162, 162, .7);
+    font-size: 14px;
+    margin-left: 3px;
+}
+.course-info .time{
+    border-radius: 14.6913px;
+    padding: 5px;
+    background-color:#FEE5DF ;
+}
+.p6{
+    margin: 0;
+    color: #FF4A60;
 }
